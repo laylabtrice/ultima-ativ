@@ -61,9 +61,18 @@ Projeto PHP para gerenciar lista de tarefas. Permite adicionar tarefas a uma lis
  
 ## Tecnologias utilizadas  
  
-- **PHP**: Linguagem de programação usada para criar a lógica de cálculo do salário do vendedor.
-- **HTML**: Linguagem de marcação utilizada para criar a estrutura do formulário e da página.
-- **CSS**: Utilizado para estilizar a página e proporcionar uma melhor experiência de usuário
+- **PHP**: Linguagem de programação usada criação da funcionalidade da tabela;
+- **HTML**: Linguagem de marcação utilizada para criar a estrutura do formulário e da página;
+- **CSS**: Estilizar a página e proporcionar uma melhor experiência de usuário;
+- **isset()**: Verifica se uma variável está definida e não é NULL. Útil para checar se variáveis existem antes de utilizá-las;
+- **$SESSION**: É um array usado para armazenar informações que podem ser acessadas em várias páginas do mesmo site durante a visita de um usuário;
+- **foreach**: Estrutura de repetição que percorre itens em um array;
+- **session_start()**: Inicia uma nova sessão ou resume uma sessão existente. É necessário para usar a variável $_SESSION;
+- **array()**: Cria um array. É uma função usada para inicializar e declarar arrays no PHP;
+- **$_GET**: É um array superglobal que é usado para coletar dados enviados na URL (query string). Geralmente usado para capturar dados enviados através de formulários com método GET;
+- **array_push()**: Adiciona um ou mais elementos no final de um array;
+- **var_dump()**: Exibe informações estruturadas incluindo o tipo e valor de uma ou mais variáveis. É muito útil para depuração;
+- **unset()**: Remove uma variável ou um item de um array. Se usado em uma variável de sessão, por exemplo, pode deslogar um usuário removendo seus dados de sessão.
 
 ## Créditos
 
