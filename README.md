@@ -30,11 +30,20 @@ Projeto PHP para gerenciar lista de tarefas. Permite adicionar tarefas a uma lis
   
 ## Explicação de código.  
 ### PHP
+
+1. PhP
+![Código 1](https://github.com/laylabtrice/ultima-ativ/blob/main/img2.png)
+
+2.
+![Código 2](https://github.com/laylabtrice/ultima-ativ/blob/main/img3.png)
+
+3.
+![Código 3](https://github.com/laylabtrice/ultima-ativ/blob/main/img4.png)
   
 
 ## Tela
 
-![Tela]()
+![Tela](https://github.com/laylabtrice/ultima-ativ/blob/main/img1.png)
 
 ## Como usar  
  
