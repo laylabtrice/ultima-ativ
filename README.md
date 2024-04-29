@@ -31,16 +31,15 @@ Projeto PHP para gerenciar lista de tarefas. Permite adicionar tarefas a uma lis
 ## Explicação de código.  
 ### PHP
 
-1. PhP
+1. O código PHP gerencia uma lista de tarefas armazenada na sessão do usuário. Ele inicia a sessão, inicializa a lista de tarefas se ainda não existir, permite adicionar tarefas enviadas via parâmetro GET `task_name`, e limpa toda a lista de tarefas se o parâmetro GET `clear` for especificado.  
 ![Código 1](https://github.com/laylabtrice/ultima-ativ/blob/main/img/img2.png)
-
-2.
+  
+2. Começo do "body" do código, cria uma tabela de "Lista de tarefas" em formato de formulário, para que o usuário adicione as informações que desejar ao utiizar do site.  
 ![Código 2](https://github.com/laylabtrice/ultima-ativ/blob/main/img/img3.png)
-
-3.
+  
+3. Nessa última tela, o código exibe as tarefas armazenadas na sessão do usuário em uma lista e oferece um botão para limpar todas as tarefas caso necessário.
 ![Código 3](https://github.com/laylabtrice/ultima-ativ/blob/main/img/img4.png)
   
-
 ## Tela
 
 ![Tela](https://github.com/laylabtrice/ultima-ativ/blob/main/img/img1.png)
