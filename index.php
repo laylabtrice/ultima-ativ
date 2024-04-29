@@ -5,9 +5,9 @@
             $_SESSION['tasks'] = array();
         }
 
-        if ( isset($_ GET['task_name']) ) {
+        if ( isset($_GET['task_name']) ) {
             array_push($_SESSION['tasks'], $_GET['task_name']);
-            unset($_GET['task_name']);|
+            unset($_GET['task_name']);
         }
 
         var_dump($_SESSION['tasks']);
@@ -23,25 +23,31 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-    <div class-"container">
-        <div class-"header">
+
+    <div class="container">
+        <div class="header">
             <h1>Gerenciador de Tarefas</h1>
     </div>
-    <div class-"form">
+    <div class="form">
         <form action="" method="get">
-            <label for-"task_name"></label>
+            <label for="task_name"></label>
             <input type="text" name="task_name" placeholder="Nome da Tarefa">
-            <button type-"submit">Cadastrar</button>
+            <button type="submit">Cadastrar</button>
     </form>
     </div>
-    <div class-"separator">
+    <div class="separator">
     </div>
-    <div class-"list-tasks">
-        <ul>
-            <li>Tarefa 1</li>
-            <li>Tarefa 2</1i>
-            <li>Tarefa 3</li>
-        </ul>
+    <div class="list-tasks">
+        <?php
+            if ( isset($_SESSION['tasks']) ) {
+                echo "<ul>";
+
+                foreach ( $_SESSION['tasks'] as $key => $task ) {
+                    echo "<li>$task</li>";
+                }
+                    echo "</ul>";
+            }
+?>
     </div>
 
 
