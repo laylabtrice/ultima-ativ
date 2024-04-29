@@ -10,7 +10,10 @@
             unset($_GET['task_name']);
         }
 
-        var_dump($_SESSION['tasks']);
+        if ( isset($_GET['clear']) ) {
+            unset($_SESSION['tasks']);
+        }
+
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +33,7 @@
     </div>
     <div class="form">
         <form action="" method="get">
-            <label for="task_name"></label>
+            <label for="task_name">Tarefas</label>
             <input type="text" name="task_name" placeholder="Nome da Tarefa">
             <button type="submit">Cadastrar</button>
     </form>
@@ -47,10 +50,12 @@
                 }
                     echo "</ul>";
             }
-?>
+        ?>
+    <form action="" method="get">
+    <input type="hidden" name="clear" value="clear">
+    <button type="submit" class="btn-clear">Limpar Tarefas</button>
+    </form>
     </div>
-
-
 
 </body>
 </html>
